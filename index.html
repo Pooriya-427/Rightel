@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./node_modules/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="./src/style.css">
+  <title>رایتل</title>
+</head>
+<body>
+
+  <nav class="relative bg-white h-20 pt-2 after:pointer-events-none after:absolute after:inset-x-0 after:bottom-0 after:h-px after:bg-white/10" dir="ltr">
+    <div class="mx-auto px-2 sm:px-6 lg:px-8">
+    <div class="relative flex h-16 items-center justify-between">
+      <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+      </div>
+      <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+        <div class="sm:ml-6 sm:block">
+          <div class="flex space-x-4">
+            <a href="#" aria-current="page" class="hidden lg:block rounded-2xl w-30 bg-pink-700 text-center px-3 py-2 text-sm font-medium text-white">ترابرد به رایتل</a>
+          <div class="flex shrink-0 items-center">
+          <img src="./images/myRightelDesktoplogo.svg" alt="Your Company" class="hidden sm:block h-8 w-auto" />
+        </div>
+            <a href="#" class="rounded-md ps-3 py-2 text-sm font-medium text-gray-600 hover:bg-white/5 ">EN |</a>
+            <a href="#" class="rounded-md py-2.5 text-sm mr-45 font-medium text-gray-300 hover:bg-white/5 hover:text-white"><svg width="19" height="19" viewBox="0 0 19 19" fill="none"><path d="M8.4068 0.613281C6.84945 0.613281 5.32708 1.07574 4.03219 1.94217C2.73731 2.8086 1.72807 4.04008 1.1321 5.4809C0.536127 6.92172 0.380194 8.50716 0.684017 10.0367C0.98784 11.5663 1.73777 12.9713 2.83898 14.074C3.94019 15.1768 5.34322 15.9278 6.87064 16.232C8.39806 16.5363 9.98127 16.3801 11.4201 15.7833C12.8589 15.1865 14.0886 14.1759 14.9539 12.8792C15.8191 11.5825 16.2809 10.0579 16.2809 8.49841C16.2786 6.40784 15.4483 4.40355 13.9721 2.92529C12.4959 1.44703 10.4944 0.615548 8.4068 0.613281V0.613281ZM8.4068 14.0709C6.93612 14.0542 5.53037 13.4618 4.49038 12.4203C3.45038 11.3789 2.85875 9.97116 2.84208 8.49841C2.83673 7.76513 2.97702 7.03809 3.25478 6.35958C3.53254 5.68107 3.94223 5.06463 4.46003 4.5461C4.97783 4.02758 5.5934 3.61731 6.27096 3.33916C6.94852 3.06101 7.67454 2.92053 8.4068 2.92589C9.14491 2.89852 9.88072 3.02394 10.5682 3.2943C11.2557 3.56466 11.8802 3.97415 12.4024 4.49716C12.9247 5.02018 13.3336 5.64547 13.6036 6.33394C13.8736 7.02242 13.9988 7.75926 13.9715 8.49841C13.9902 9.23531 13.859 9.96831 13.586 10.6529C13.3129 11.3374 12.9037 11.9592 12.3832 12.4804C11.8627 13.0017 11.2418 13.4114 10.5582 13.6849C9.87463 13.9583 9.14266 14.0896 8.4068 14.0709Z" fill="#666666"></path><path d="M18.3373 16.904L14.1702 12.731C13.8862 12.4466 13.2883 12.8167 13.0043 13.1045C12.7204 13.3922 12.1216 13.8753 12.4056 14.1571L16.5727 18.3301C16.7962 18.5112 17.0743 18.6115 17.3618 18.6146C17.6493 18.6177 17.9294 18.5235 18.1568 18.3472C18.3601 18.1718 18.4912 17.9271 18.5245 17.6604C18.5579 17.3937 18.4911 17.1242 18.3373 16.904Z" fill="#666666"></path></svg>
+          </a>
+          </div>
+        </div>
+      </div>
+          <div class="flex space-x-4">
+            <a href="#" aria-current="page" class="rounded-full border-gray-300 border-1 w-48 flex bg-white text-center px-5 py-2 text-sm font-medium text-black">مشترک های سازمانی &nbsp;<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M9 3C7.3425 3 6 4.3425 6 6C6 7.6575 7.3425 9 9 9C10.6575 9 12 7.6575 12 6C12 4.3425 10.6575 3 9 3ZM10.5 6C10.5 5.175 9.825 4.5 9 4.5C8.175 4.5 7.5 5.175 7.5 6C7.5 6.825 8.175 7.5 9 7.5C9.825 7.5 10.5 6.825 10.5 6ZM13.5 12.75C13.35 12.2175 11.025 11.25 9 11.25C6.975 11.25 4.65 12.2175 4.5 12.7575V13.5H13.5V12.75ZM3 12.75C3 10.755 6.9975 9.75 9 9.75C11.0025 9.75 15 10.755 15 12.75V15H3V12.75Z" fill="#3F484A"></path></svg>
+          </a>
+   </nav>
+
+<nav class="text-gray-800 bg-white h-20 border-b-1 border-b-gray-300 sticky top-0 z-50">
+  <div class="container mx-auto px-4 flex justify-start items-center py-4">    
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-10 lg:hidden md:block sm:hidden cursor-pointer">
+     <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+    </svg>
+      <a href="#" class="xl:ml-20 xl:mr-2 lg:ml-5 mr-2">
+      <img src="./images/rightel-logo-fa.svg" width="80px" alt="">
+    </a>
+    <ul class="hidden lg:flex xl:gap-15 lg:gap-6">
+      <li class="group">
+        <button class="hover:text-fuchsia-800 flex items-center"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5"><path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" /></svg>محصولات</button>
+        <ul class="absolute hidden group-hover:block ml-10 right-0 w-dvw shadow-lg space-y-2 z-50 text-[15px] bg-white">
+          <li><a href="#" class="block px-4 py-4 pr-50 mt-8"><p class="flex items-center text-fuchsia-800 bg-purple-200 w-38 p-2 rounded-4xl pr-7">سیم کارت ها &nbsp;&nbsp;<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5"><path fill-rule="evenodd" d="M11.78 5.22a.75.75 0 0 1 0 1.06L8.06 10l3.72 3.72a.75.75 0 1 1-1.06 1.06l-4.25-4.25a.75.75 0 0 1 0-1.06l4.25-4.25a.75.75 0 0 1 1.06 0Z" clip-rule="evenodd" /></svg></p></a></li>
+          <li><a href="#" class="block px-4 py-2 pr-54 hover:text-fuchsia-800">سرویس فیبر نوری</a></li>
+          <li><a href="#" class="block px-4 py-4 pb-17 pr-63 hover:text-fuchsia-800">سایر</a></li>
+        </ul>
+        <ul class="absolute hidden group-hover:block ml-10 right-100 space-y-2 z-50 text-[15px] bg-white">
+          <li><a href="#" class="flex px-4 py-4 mt-8 items-center text-fuchsia-800 border-b-1 border-gray-300"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" fill="none"><path fill="#A72B77" d="M8 19.5a.97.97 0 0 0 .713-.288A.968.968 0 0 0 9 18.5a.968.968 0 0 0-.287-.712A.967.967 0 0 0 8 17.5a.967.967 0 0 0-.713.288A.968.968 0 0 0 7 18.5c0 .283.096.52.287.712.192.192.43.288.713.288Zm0-4c.283 0 .52-.096.713-.287A.968.968 0 0 0 9 14.5v-2a.968.968 0 0 0-.287-.713A.967.967 0 0 0 8 11.5a.967.967 0 0 0-.713.287A.968.968 0 0 0 7 12.5v2c0 .283.096.52.287.713.192.191.43.287.713.287Zm4 4a.97.97 0 0 0 .713-.288A.968.968 0 0 0 13 18.5v-2a.968.968 0 0 0-.287-.713A.968.968 0 0 0 12 15.5a.968.968 0 0 0-.713.287.968.968 0 0 0-.287.713v2c0 .283.096.52.287.712.192.192.43.288.713.288Zm0-6c.283 0 .52-.096.713-.287A.968.968 0 0 0 13 12.5a.968.968 0 0 0-.287-.713A.968.968 0 0 0 12 11.5a.968.968 0 0 0-.713.287.968.968 0 0 0-.287.713c0 .283.096.52.287.713.192.191.43.287.713.287Zm4 6c.283 0 .52-.096.712-.288A.968.968 0 0 0 17 18.5a.968.968 0 0 0-.288-.712A.968.968 0 0 0 16 17.5a.968.968 0 0 0-.713.288.968.968 0 0 0-.287.712c0 .283.096.52.287.712.192.192.43.288.713.288Zm0-4a.97.97 0 0 0 .712-.287A.968.968 0 0 0 17 14.5v-2a.968.968 0 0 0-.288-.713A.968.968 0 0 0 16 11.5a.968.968 0 0 0-.713.287.968.968 0 0 0-.287.713v2c0 .283.096.52.287.713.192.191.43.287.713.287Zm-10 7c-.55 0-1.02-.196-1.412-.587A1.926 1.926 0 0 1 4 20.5V9.325a1.975 1.975 0 0 1 .575-1.4l4.85-4.85a1.975 1.975 0 0 1 1.4-.575H18c.55 0 1.02.196 1.413.587.391.392.587.863.587 1.413v16c0 .55-.196 1.02-.587 1.413A1.926 1.926 0 0 1 18 22.5H6Zm0-2h12v-16h-7.15L6 9.35V20.5Z"/></svg>&nbsp;&nbsp;سیم کارت ها</a></li>
+          <li><a href="#" class="block px-4 py-2 pr-10 hover:text-fuchsia-800">دائمی</a></li>
+          <li><a href="#" class="block px-4 py-2 pr-10 hover:text-fuchsia-800">اعتباری</a></li>
+          <li><a href="#" class="block px-4 py-2 pb-10 pr-10 hover:text-fuchsia-800">سیم کارت هدیه</a></li>
+        </ul> 
+      </li>
+      <li class="group">
+        <button class="hover:text-fuchsia-800 flex items-center"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5"><path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" /></svg>خدمات و سرگرمی</button>
+        <ul class="absolute hidden group-hover:block ml-10 right-0 w-dvw shadow-lg space-y-2 z-50 text-[15px] bg-white">
+          <li><a href="#" class="block px-4 py-4 pr-50 mt-8"><p class="flex items-center text-fuchsia-800 bg-purple-200 w-40 p-2 rounded-4xl pr-6">خدمات ارتباطی &nbsp;&nbsp;<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5"><path fill-rule="evenodd" d="M11.78 5.22a.75.75 0 0 1 0 1.06L8.06 10l3.72 3.72a.75.75 0 1 1-1.06 1.06l-4.25-4.25a.75.75 0 0 1 0-1.06l4.25-4.25a.75.75 0 0 1 1.06 0Z" clip-rule="evenodd" /></svg></p></a></li>
+          <li><a href="#" class="block px-4 py-4 pb-29 pr-60 hover:text-fuchsia-800">خدمات نوین</a></li>
+        </ul>
+        <ul class="absolute hidden group-hover:block ml-10 right-100 space-y-2 z-50 text-[15px] bg-white">
+          <li><a href="#" class="flex px-4 py-4 mt-8 items-center text-fuchsia-800 border-b-1 border-gray-300"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#a72b77"><path d="M800-480q-16 0-28.5-11.5T757-520q-13-93-78.5-158.5T520-757q-17-2-28.5-14T480-800q0-17 12-28.5t28-9.5q126 14 215 103t103 215q2 16-9.5 28T800-480Zm-167 0q-13 0-23-9t-15-24q-8-29-30.5-51.5T513-595q-15-5-24-15t-9-24q0-20 14-32.5t31-8.5q56 13 96.5 53.5T675-525q4 17-9 31t-33 14Zm165 360q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z"/></svg>&nbsp;&nbsp;خدمات صوتی</a></li>
+          <li><a href="#" class="block px-4 py-2 hover:text-fuchsia-800">سرویس تماس از دست رفته</a></li>
+          <li><a href="#" class="block px-4 py-2 hover:text-fuchsia-800">کنفرانس تلفنی</a></li>
+          <li><a href="#" class="block px-4 py-2 pb-10 hover:text-fuchsia-800">مدیریت تماس</a></li>
+        </ul>
+        <ul class="absolute hidden group-hover:block ml-10 right-160 space-y-2 z-50 text-[15px] bg-white">
+          <li><a href="#" class="flex px-4 py-4 mt-8 items-center text-fuchsia-800 border-b-1 border-gray-300"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#a72b77"><path d="M280-160v40h400v-40H280Zm394-210q-8-3-14-6.5t-12-9.5l-30 13q-7 3-14 .5t-11-9.5l-22-39q-4-7-2.5-14t7.5-12l26-19q-2-8-2-15t2-15l-25-19q-6-5-7.5-12.5T572-542l23-38q4-6 11-8.5t14 .5l28 12q6-5 12-8t14-6l4-32q1-8 6.5-13t13.5-5h44q8 0 13.5 5t6.5 13l4 32q8 3 14 6t12 8l28-12q7-3 14-.5t11 8.5l23 38q4 7 2.5 14.5T863-515l-25 19q2 8 2 15t-2 15l26 19q6 5 7.5 12t-2.5 14l-22 39q-4 7-11 9.5t-14-.5l-30-13q-6 6-12 9.5t-14 6.5l-4 32q-1 8-6.5 13t-13.5 5h-44q-8 0-13.5-5t-6.5-13l-4-32Zm46-50q26 0 43-17t17-43q0-26-17-43t-43-17q-26 0-43 17t-17 43q0 26 17 43t43 17ZM280-800h400v-40H280v40Zm0 0v-40 40Zm0 640v40-40Zm0 120q-33 0-56.5-23.5T200-120v-720q0-33 23.5-56.5T280-920h400q33 0 56.5 23.5T760-840v120q0 17-11.5 28.5T720-680q-17 0-28.5-11.5T680-720H280v480h400q0-17 11.5-28.5T720-280q17 0 28.5 11.5T760-240v120q0 33-23.5 56.5T680-40H280Z"/></svg>&nbsp;&nbsp;خدمات کاربردی</a></li>
+          <li><a href="#" class="block px-4 py-2 hover:text-fuchsia-800">مدیریت خدمات پیامکی</a></li>
+          <li><a href="#" class="block px-4 py-2 hover:text-fuchsia-800">سرویس کودک و نوجوان</a></li>
+          <li><a href="#" class="block px-4 py-2 pb-10 hover:text-fuchsia-800">کدهای دستوری</a></li>
+        </ul>
+      </li>
+      <li class="group">
+        <button class="hover:text-fuchsia-800 flex items-center"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5"><path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" /></svg>طرح ها و پیشنهادها</button>
+        <ul class="absolute hidden group-hover:block ml-10 right-0 w-dvw shadow-lg space-y-2 z-50 text-[15px] bg-white">
+          <li><a href="#" class="block px-4 pb-6 py-2 pr-50 mt-8"><p class="flex items-center text-fuchsia-800 bg-purple-200 w-40 p-2 rounded-4xl pr-9">مشترک جدید &nbsp;&nbsp;<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5"><path fill-rule="evenodd" d="M11.78 5.22a.75.75 0 0 1 0 1.06L8.06 10l3.72 3.72a.75.75 0 1 1-1.06 1.06l-4.25-4.25a.75.75 0 0 1 0-1.06l4.25-4.25a.75.75 0 0 1 1.06 0Z" clip-rule="evenodd" /></svg></p></a></li>
+          <li><a href="#" class="block px-4 pr-64 hover:text-fuchsia-800">بسته ها</a></li>
+          <li><a href="#" class="block px-4 py-3 pb-4 pr-57 hover:text-fuchsia-800">پیشنهادهای ویژه</a></li>
+          <li><a href="#" class="block px-4 pb-13 pr-63 hover:text-fuchsia-800">تعرفه ها</a></li>
+        </ul>
+        <ul class="absolute hidden group-hover:block ml-10 right-100 space-y-2 z-50 text-[15px] bg-white">
+          <li><a href="#" class="flex px-4 py-4 mt-8 items-center text-fuchsia-800 border-b-1 border-gray-300"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" fill="none"><path fill="#A72B77" d="M8 19.5a.97.97 0 0 0 .713-.288A.968.968 0 0 0 9 18.5a.968.968 0 0 0-.287-.712A.967.967 0 0 0 8 17.5a.967.967 0 0 0-.713.288A.968.968 0 0 0 7 18.5c0 .283.096.52.287.712.192.192.43.288.713.288Zm0-4c.283 0 .52-.096.713-.287A.968.968 0 0 0 9 14.5v-2a.968.968 0 0 0-.287-.713A.967.967 0 0 0 8 11.5a.967.967 0 0 0-.713.287A.968.968 0 0 0 7 12.5v2c0 .283.096.52.287.713.192.191.43.287.713.287Zm4 4a.97.97 0 0 0 .713-.288A.968.968 0 0 0 13 18.5v-2a.968.968 0 0 0-.287-.713A.968.968 0 0 0 12 15.5a.968.968 0 0 0-.713.287.968.968 0 0 0-.287.713v2c0 .283.096.52.287.712.192.192.43.288.713.288Zm0-6c.283 0 .52-.096.713-.287A.968.968 0 0 0 13 12.5a.968.968 0 0 0-.287-.713A.968.968 0 0 0 12 11.5a.968.968 0 0 0-.713.287.968.968 0 0 0-.287.713c0 .283.096.52.287.713.192.191.43.287.713.287Zm4 6c.283 0 .52-.096.712-.288A.968.968 0 0 0 17 18.5a.968.968 0 0 0-.288-.712A.968.968 0 0 0 16 17.5a.968.968 0 0 0-.713.288.968.968 0 0 0-.287.712c0 .283.096.52.287.712.192.192.43.288.713.288Zm0-4a.97.97 0 0 0 .712-.287A.968.968 0 0 0 17 14.5v-2a.968.968 0 0 0-.288-.713A.968.968 0 0 0 16 11.5a.968.968 0 0 0-.713.287.968.968 0 0 0-.287.713v2c0 .283.096.52.287.713.192.191.43.287.713.287Zm-10 7c-.55 0-1.02-.196-1.412-.587A1.926 1.926 0 0 1 4 20.5V9.325a1.975 1.975 0 0 1 .575-1.4l4.85-4.85a1.975 1.975 0 0 1 1.4-.575H18c.55 0 1.02.196 1.413.587.391.392.587.863.587 1.413v16c0 .55-.196 1.02-.587 1.413A1.926 1.926 0 0 1 18 22.5H6Zm0-2h12v-16h-7.15L6 9.35V20.5Z"/></svg>&nbsp;&nbsp;سیم کارت دائمی</a></li>
+          <li><a href="#" class="block px-4 py-2 pb-10 pr-5 hover:text-fuchsia-800">سیم کارت طرح X</a></li>
+        </ul>
+        <ul class="absolute hidden group-hover:block ml-10 right-145 space-y-2 z-50 text-[15px] bg-white">
+          <li><a href="#" class="flex px-4 py-4 mt-8 items-center text-fuchsia-800 border-b-1 border-gray-300"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 22C5.45 22 4.97917 21.8042 4.5875 21.4125C4.19583 21.0208 4 20.55 4 20V8.825C4 8.55833 4.05 8.30417 4.15 8.0625C4.25 7.82083 4.39167 7.60833 4.575 7.425L9.425 2.575C9.60833 2.39167 9.82083 2.25 10.0625 2.15C10.3042 2.05 10.5583 2 10.825 2H18C18.55 2 19.0208 2.19583 19.4125 2.5875C19.8042 2.97917 20 3.45 20 4V20C20 20.55 19.8042 21.0208 19.4125 21.4125C19.0208 21.8042 18.55 22 18 22H6ZM6 20H18V4H10.85L6 8.85V20Z" fill="#A72B77"/><path d="M10.4674 12.9392H11.5598V16.7617C11.5598 16.8875 11.6169 16.9641 11.7312 16.9915C11.8454 17.0189 11.9332 16.9798 11.9946 16.8741L14.9281 11.7471C15.0227 11.5896 15.024 11.4358 14.9319 11.2858C14.8398 11.1358 14.7067 11.0608 14.5326 11.0608H13.4402V7.23831C13.4402 7.11248 13.3831 7.03586 13.2688 7.00846C13.1546 6.98107 13.0668 7.02021 13.0054 7.12587L10.0719 12.2529C9.97732 12.4104 9.97604 12.5642 10.0681 12.7142C10.1602 12.8642 10.2933 12.9392 10.4674 12.9392Z" fill="#A72B77"/></svg>&nbsp;&nbsp;سیم کارت اعتباری</a></li>
+          <li><a href="#" class="block px-4 py-2 hover:text-fuchsia-800">سیم کارت طرح انرژی</a></li>
+          <li><a href="#" class="block px-4 py-2 pb-10 hover:text-fuchsia-800">سیم کارت جوان</a></li>
+        </ul>
+      </li>
+      <li class="group">
+        <button class="hover:text-fuchsia-800 flex items-center"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5"><path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" /></svg>ثبت نام و خرید</button>
+        <ul class="absolute hidden group-hover:block ml-10 right-0 w-dvw shadow-lg space-y-2 z-50 text-[15px] bg-white">
+          <li><a href="#" class="block px-4 py-2 pb-6 pr-50 mt-8"><p class="flex items-center text-fuchsia-800 bg-purple-200 w-38 p-2 rounded-4xl pr-12">ثبت نام &nbsp;&nbsp;<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5"><path fill-rule="evenodd" d="M11.78 5.22a.75.75 0 0 1 0 1.06L8.06 10l3.72 3.72a.75.75 0 1 1-1.06 1.06l-4.25-4.25a.75.75 0 0 1 0-1.06l4.25-4.25a.75.75 0 0 1 1.06 0Z" clip-rule="evenodd" /></svg></p></a></li>
+          <li><a href="#" class="block px-4 pr-65 hover:text-fuchsia-800">ترابرد</a></li>
+          <li><a href="#" class="block px-4 py-3 pr-55 hover:text-fuchsia-800">امور نمایندگی ها</a></li>
+          <li><a href="#" class="block px-4 pb-17 pr-53 hover:text-fuchsia-800">مراکز توزیع و فروش</a></li>
+        </ul>
+        <ul class="absolute hidden group-hover:block ml-10 right-100 space-y-2 z-50 text-[15px] bg-white">
+          <li><a href="#" class="flex px-4 py-4 mt-8 items-center text-fuchsia-800 border-b-1 border-gray-300"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" fill="none"><path fill="#A72B77" d="M8 19.5a.97.97 0 0 0 .713-.288A.968.968 0 0 0 9 18.5a.968.968 0 0 0-.287-.712A.967.967 0 0 0 8 17.5a.967.967 0 0 0-.713.288A.968.968 0 0 0 7 18.5c0 .283.096.52.287.712.192.192.43.288.713.288Zm0-4c.283 0 .52-.096.713-.287A.968.968 0 0 0 9 14.5v-2a.968.968 0 0 0-.287-.713A.967.967 0 0 0 8 11.5a.967.967 0 0 0-.713.287A.968.968 0 0 0 7 12.5v2c0 .283.096.52.287.713.192.191.43.287.713.287Zm4 4a.97.97 0 0 0 .713-.288A.968.968 0 0 0 13 18.5v-2a.968.968 0 0 0-.287-.713A.968.968 0 0 0 12 15.5a.968.968 0 0 0-.713.287.968.968 0 0 0-.287.713v2c0 .283.096.52.287.712.192.192.43.288.713.288Zm0-6c.283 0 .52-.096.713-.287A.968.968 0 0 0 13 12.5a.968.968 0 0 0-.287-.713A.968.968 0 0 0 12 11.5a.968.968 0 0 0-.713.287.968.968 0 0 0-.287.713c0 .283.096.52.287.713.192.191.43.287.713.287Zm4 6c.283 0 .52-.096.712-.288A.968.968 0 0 0 17 18.5a.968.968 0 0 0-.288-.712A.968.968 0 0 0 16 17.5a.968.968 0 0 0-.713.288.968.968 0 0 0-.287.712c0 .283.096.52.287.712.192.192.43.288.713.288Zm0-4a.97.97 0 0 0 .712-.287A.968.968 0 0 0 17 14.5v-2a.968.968 0 0 0-.288-.713A.968.968 0 0 0 16 11.5a.968.968 0 0 0-.713.287.968.968 0 0 0-.287.713v2c0 .283.096.52.287.713.192.191.43.287.713.287Zm-10 7c-.55 0-1.02-.196-1.412-.587A1.926 1.926 0 0 1 4 20.5V9.325a1.975 1.975 0 0 1 .575-1.4l4.85-4.85a1.975 1.975 0 0 1 1.4-.575H18c.55 0 1.02.196 1.413.587.391.392.587.863.587 1.413v16c0 .55-.196 1.02-.587 1.413A1.926 1.926 0 0 1 18 22.5H6Zm0-2h12v-16h-7.15L6 9.35V20.5Z"/></svg>&nbsp;&nbsp;سیم کارت ها</a></li>
+          <li><a href="#" class="block px-4 py-2  hover:text-fuchsia-800">ثبت نام و خرید سیم کارت</a></li>
+          <li><a href="#" class="block px-4 py-2 pb-10  hover:text-fuchsia-800">راهنمای ثبت نام و خرید</a></li>
+        </ul> 
+      </li>
+      <li class="group">
+        <button class="hover:text-fuchsia-800 flex items-center"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5"><path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" /></svg>رایتل من</button>
+        <ul class="absolute hidden group-hover:block ml-10 right-0 w-dvw shadow-lg space-y-2 z-50 text-[15px] bg-white">
+          <li><a href="#" class="block px-4 py-2 pb-6 pr-50 mt-8"><p class="flex items-center text-fuchsia-800 bg-purple-200 w-38 p-2 rounded-4xl pr-7">پرداخت قبض &nbsp;&nbsp;<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5"><path fill-rule="evenodd" d="M11.78 5.22a.75.75 0 0 1 0 1.06L8.06 10l3.72 3.72a.75.75 0 1 1-1.06 1.06l-4.25-4.25a.75.75 0 0 1 0-1.06l4.25-4.25a.75.75 0 0 1 1.06 0Z" clip-rule="evenodd" /></svg></p></a></li>
+          <li><a href="#" class="block px-4 pr-60 hover:text-fuchsia-800">خرید شارژ</a></li>
+          <li><a href="#" class="block px-4 pb-17 pt-5 pr-61 hover:text-fuchsia-800">رایتل من</a></li>
+        </ul>
+        <ul class="absolute hidden group-hover:block ml-10 right-100 space-y-2 z-50 text-[15px] bg-white">
+          <li><a href="#" class="flex px-4 py-4 mt-8 items-center text-fuchsia-800 border-b-1 border-gray-300"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.99997 21.5C5.30127 21.5 4.70993 21.258 4.22595 20.774C3.74198 20.29 3.5 19.6987 3.5 19V17.4039C3.5 17.1462 3.58623 16.9311 3.75868 16.7587C3.93111 16.5863 4.14617 16.5 4.40385 16.5H6.5V3.18658C6.5 3.08275 6.54199 3.0132 6.62598 2.97793C6.70994 2.94268 6.79039 2.95711 6.86733 3.02121L7.60193 3.63081C7.68911 3.70517 7.78334 3.74236 7.88462 3.74236C7.98591 3.74236 8.08013 3.70517 8.1673 3.63081L9.00577 2.94621C9.09296 2.87184 9.18718 2.83466 9.28845 2.83466C9.38973 2.83466 9.48397 2.87184 9.57115 2.94621L10.4096 3.63081C10.4968 3.70517 10.591 3.74236 10.6923 3.74236C10.7936 3.74236 10.8878 3.70517 10.975 3.63081L11.8135 2.94621C11.9006 2.87184 11.9949 2.83466 12.0961 2.83466C12.1974 2.83466 12.2916 2.87184 12.3788 2.94621L13.2173 3.63081C13.3045 3.70517 13.3987 3.74236 13.5 3.74236C13.6013 3.74236 13.6955 3.70517 13.7827 3.63081L14.6211 2.94621C14.7083 2.87184 14.8025 2.83466 14.9038 2.83466C15.0051 2.83466 15.0993 2.87184 15.1865 2.94621L16.025 3.63081C16.1121 3.70517 16.2064 3.74236 16.3077 3.74236C16.4089 3.74236 16.5032 3.70517 16.5904 3.63081L17.4288 2.94621C17.516 2.87184 17.6102 2.83466 17.7115 2.83466C17.8128 2.83466 17.907 2.87184 17.9942 2.94621L18.8327 3.63081C18.9198 3.70517 19.014 3.74236 19.1153 3.74236C19.2166 3.74236 19.3108 3.70517 19.398 3.63081L20.1326 3.02121C20.2096 2.95711 20.29 2.94268 20.374 2.97793C20.458 3.0132 20.5 3.08275 20.5 3.18658V19C20.5 19.6987 20.258 20.29 19.774 20.774C19.29 21.258 18.6987 21.5 18 21.5H5.99997ZM18 20C18.2833 20 18.5208 19.9042 18.7125 19.7125C18.9041 19.5208 19 19.2833 19 19V5.00001H7.99998V16.5H16.0961C16.3538 16.5 16.5689 16.5863 16.7413 16.7587C16.9138 16.9311 17 17.1462 17 17.4039V19C17 19.2833 17.0958 19.5208 17.2875 19.7125C17.4791 19.9042 17.7166 20 18 20ZM9.94228 7.25003H14.1154C14.3282 7.25003 14.5064 7.32182 14.65 7.46541C14.7936 7.60899 14.8654 7.78719 14.8654 8.00001C14.8654 8.21282 14.7936 8.39102 14.65 8.53461C14.5064 8.67819 14.3282 8.74998 14.1154 8.74998H9.94228C9.72946 8.74998 9.55126 8.67819 9.40768 8.53461C9.26409 8.39102 9.1923 8.21282 9.1923 8.00001C9.1923 7.78719 9.26409 7.60899 9.40768 7.46541C9.55126 7.32182 9.72946 7.25003 9.94228 7.25003ZM9.94228 10.25H14.1154C14.3282 10.25 14.5064 10.3218 14.65 10.4654C14.7936 10.609 14.8654 10.7872 14.8654 11C14.8654 11.2128 14.7936 11.391 14.65 11.5346C14.5064 11.6782 14.3282 11.75 14.1154 11.75H9.94228C9.72946 11.75 9.55126 11.6782 9.40768 11.5346C9.26409 11.391 9.1923 11.2128 9.1923 11C9.1923 10.7872 9.26409 10.609 9.40768 10.4654C9.55126 10.3218 9.72946 10.25 9.94228 10.25ZM16.9423 8.88461C16.6974 8.88461 16.4888 8.79839 16.3163 8.62596C16.1439 8.45352 16.0577 8.24487 16.0577 8.00001C16.0577 7.75514 16.1439 7.54649 16.3163 7.37406C16.4888 7.20162 16.6974 7.11541 16.9423 7.11541C17.1871 7.11541 17.3958 7.20162 17.5682 7.37406C17.7407 7.54649 17.8269 7.75514 17.8269 8.00001C17.8269 8.24487 17.7407 8.45352 17.5682 8.62596C17.3958 8.79839 17.1871 8.88461 16.9423 8.88461ZM16.9423 11.8846C16.6974 11.8846 16.4888 11.7984 16.3163 11.626C16.1439 11.4535 16.0577 11.2449 16.0577 11C16.0577 10.7551 16.1439 10.5465 16.3163 10.3741C16.4888 10.2016 16.6974 10.1154 16.9423 10.1154C17.1871 10.1154 17.3958 10.2016 17.5682 10.3741C17.7407 10.5465 17.8269 10.7551 17.8269 11C17.8269 11.2449 17.7407 11.4535 17.5682 11.626C17.3958 11.7984 17.1871 11.8846 16.9423 11.8846Z" fill="#A72B77"/></svg>&nbsp;&nbsp;پرداخت قبض</a></li>
+          <li><a href="#" class="block px-4 py-2 pb-10 hover:text-fuchsia-800">پرداخت صورتحساب</a></li>
+        </ul>
+      </li>
+      <li class="group">
+        <button class="hover:text-fuchsia-800 flex items-center"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5"><path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" /></svg>درباره رایتل</button>
+        <ul class="absolute hidden group-hover:block ml-10 right-0 w-dvw shadow-lg space-y-2 z-50 text-[15px] bg-white">
+          <li><a href="#" class="block px-4 py-2 pb-6 pr-50 mt-8"><p class="flex items-center text-fuchsia-800 bg-purple-200 w-38 p-2 rounded-4xl pr-11">رویدادها &nbsp;&nbsp;<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5"><path fill-rule="evenodd" d="M11.78 5.22a.75.75 0 0 1 0 1.06L8.06 10l3.72 3.72a.75.75 0 1 1-1.06 1.06l-4.25-4.25a.75.75 0 0 1 0-1.06l4.25-4.25a.75.75 0 0 1 1.06 0Z" clip-rule="evenodd" /></svg></p></a></li>
+          <li><a href="#" class="block px-4 pr-65 hover:text-fuchsia-800">اخبار</a></li>
+          <li><a href="#" class="block px-4 pt-5 pr-59 hover:text-fuchsia-800">معرفی رایتل</a></li>
+          <li><a href="#" class="block px-4 pt-5 pr-58 hover:text-fuchsia-800">همکاری با رایتل</a></li>
+          <li><a href="#" class="block px-4 pt-5 pb-17 pr-59 hover:text-fuchsia-800">تماس با رایتل</a></li>
+        </ul>
+        <ul class="absolute hidden group-hover:block ml-10 right-100 space-y-2 z-50 text-[15px] bg-white">
+          <li><a href="#" class="flex px-4 py-4 mt-8 items-center text-fuchsia-800 border-b-1 border-gray-300"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M19 4H18V2H16V4H8V2H6V4H5C3.89 4 3 4.9 3 6V20C3 21.1 3.89 22 5 22H19C20.1 22 21 21.1 21 20V6C21 4.9 20.1 4 19 4ZM19 20H5V9H19V20ZM6.5 13C6.5 11.62 7.62 10.5 9 10.5C10.38 10.5 11.5 11.62 11.5 13C11.5 14.38 10.38 15.5 9 15.5C7.62 15.5 6.5 14.38 6.5 13Z" fill="#A72B77"/></svg>&nbsp;&nbsp;رویدادها</a></li>
+          <li><a href="#" class="block px-4 py-2 pb-10 hover:text-fuchsia-800">رویدادها</a></li>
+        </ul>
+      </li>
+      <li class="group">
+        <button class="hover:text-fuchsia-800 flex items-center"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5"><path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" /></svg>پشتیبانی</button>
+        <ul class="absolute hidden group-hover:block ml-10 right-0 w-dvw shadow-lg space-y-2 z-50 text-[15px] bg-white">
+          <li><a href="#" class="block px-4 py-2 pb-6 pr-50 mt-8"><p class="flex items-center text-fuchsia-800 bg-purple-200 w-38 p-2 rounded-4xl pr-10">مشترکین &nbsp;&nbsp;<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5"><path fill-rule="evenodd" d="M11.78 5.22a.75.75 0 0 1 0 1.06L8.06 10l3.72 3.72a.75.75 0 1 1-1.06 1.06l-4.25-4.25a.75.75 0 0 1 0-1.06l4.25-4.25a.75.75 0 0 1 1.06 0Z" clip-rule="evenodd" /></svg></p></a></li>
+          <li><a href="#" class="block px-4 pb-91 pr-62 hover:text-fuchsia-800">تنظیمات</a></li>
+        </ul>
+        <ul class="absolute hidden group-hover:block ml-10 right-100 space-y-2 z-50 text-[15px] bg-white">
+          <li><a href="#" class="flex px-4 py-4 mt-8 items-center text-fuchsia-800 border-b-1 border-gray-300"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 14C11.45 14 10.9792 13.8042 10.5875 13.4125C10.1958 13.0208 10 12.55 10 12C10 11.45 10.1958 10.9792 10.5875 10.5875C10.9792 10.1958 11.45 10 12 10C12.55 10 13.0208 10.1958 13.4125 10.5875C13.8042 10.9792 14 11.45 14 12C14 12.55 13.8042 13.0208 13.4125 13.4125C13.0208 13.8042 12.55 14 12 14ZM16 18H8V17.425C8 17.025 8.10833 16.6583 8.325 16.325C8.54167 15.9917 8.84167 15.7417 9.225 15.575C9.65833 15.3917 10.1042 15.25 10.5625 15.15C11.0208 15.05 11.5 15 12 15C12.5 15 12.9792 15.05 13.4375 15.15C13.8958 15.25 14.3417 15.3917 14.775 15.575C15.1583 15.7417 15.4583 15.9917 15.675 16.325C15.8917 16.6583 16 17.025 16 17.425V18ZM6 22H18C18.55 22 19.0208 21.8042 19.4125 21.4125C19.8042 21.0208 20 20.55 20 20V4C20 3.45 19.8042 2.97917 19.4125 2.5875C19.0208 2.19583 18.55 2 18 2H10.825C10.5583 2 10.3042 2.05 10.0625 2.15C9.82083 2.25 9.60833 2.39167 9.425 2.575L4.575 7.425C4.39167 7.60833 4.25 7.82083 4.15 8.0625C4.05 8.30417 4 8.55833 4 8.825V20C4 20.55 4.19583 21.0208 4.5875 21.4125C4.97917 21.8042 5.45 22 6 22ZM6 20V8.85L10.85 4H18V20H6Z" fill="#A72B77"/></svg>&nbsp;&nbsp;مشترکین</a></li>
+          <li><a href="#" class="block px-4 py-2  hover:text-fuchsia-800">راهنمای مشترکین</a></li>
+          <li><a href="#" class="block px-4 py-2  hover:text-fuchsia-800">استعلام وضعیت سیم کارت</a></li>
+          <li><a href="#" class="block px-4 py-2  hover:text-fuchsia-800">رهگیری مرسوله پستی</a></li>
+          <li><a href="#" class="block px-4 py-2  hover:text-fuchsia-800">رسیدگی به مزاحمت تلفنی</a></li>
+          <li><a href="#" class="block px-4 py-2  hover:text-fuchsia-800">انتقال مالکیت سیم کارت</a></li>
+          <li><a href="#" class="block px-4 py-2  hover:text-fuchsia-800">تعویض سیم کارت</a></li>
+          <li><a href="#" class="block px-4 py-2  hover:text-fuchsia-800">پرسش های متداول</a></li> 
+          <li><a href="#" class="block px-4 py-2 pb-10  hover:text-fuchsia-800">راهنمای استفاده از کد ارغوان</a></li>
+        </ul> 
+      </li>
+    </ul>
+    
+    <!-- Mobile menu -->
+
+      <a href="#" class="md:block md:ms-100 lg:hidden rounded-2xl w-30 mr-15 bg-pink-700 text-center py-2 text-sm font-medium text-white">ترابرد به رایتل</a>
+        <div class="flex sm:hidden  shrink-0 items-center mr-5">
+          <img src="./images/myRightelMobileLogo.svg" alt="Your Company" class="h-8 w-auto"/>
+        </div>  
+     </div>
+  </nav>
+
+
+
+<!-- swiper -->
+
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper text-gray-700">
+      <div class="swiper-slide gap-x-25">
+        <div class="lg:w-110 w-60">
+          <img src="./images/Slider-600x600-1.jpg" alt="" class="rounded-2xl">
+        </div><br>
+        <div>
+        <p class="lg:text-6xl text-4xl max-w-160 lg:text-right font-extrabold">یه خوشامدگویی پر از اتفاق خوب</p><br>
+        <div class="lg:flex justify-between sm:block">
+        <p class="lg:text-3xl text-2xl">ویژه تازه واردهای رایتل</p><br>
+        <a href="#" target="_blank" class="rounded-xl bg-pink-700 text-center lg:px-0 md:px-8 p-2 w-35 h-9 text-sm font-bold text-white px-45">اطلاعات بیشتر</a>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide gap-x-25">
+        <div class="lg:w-110 w-60">
+          <img src="./images/500-500-سیم-کارت-دائمی.jpg" alt="" class="rounded-2xl">
+        </div><br>
+        <div>
+        <p class="lg:text-6xl text-4xl lg:text-right font-extrabold">سیم کارت دائمی طرح X</p><br>
+        <div class="lg:flex justify-between gap-10 sm:block">
+        <p class="lg:text-3xl text-2xl">پُرگیگ ترین سیم کارت کشور!</p><br>
+        <a href="#" target="_blank" class="rounded-xl bg-pink-700 text-center lg:px-0 md:px-8 p-2 w-35 h-9 text-sm font-bold text-white px-45">اطلاعات بیشتر</a>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide gap-x-25">
+        <div class="lg:w-110 w-60">
+          <img src="./images/500-500-سیم-کارت-اعتباری.jpg" alt="" class="rounded-2xl">
+        </div><br>
+        <div>
+        <p class="lg:text-6xl text-4xl lg:text-right font-extrabold">یک شروع پُرانرژی!</p><br>
+        <p class="lg:text-3xl text-2xl lg:text-right">سیم کارت اعتباری رایتل</p><br>
+        <div class="lg:flex justify-between sm:block">
+        <p class="lg:text-2xl text-2xl">با بسته های انرژی</p><br>
+        <a href="#" target="_blank" class="rounded-xl bg-pink-700 text-center lg:px-0 md:px-8 p-2 w-35 h-9 text-sm font-bold text-white px-45">اطلاعات بیشتر</a>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide gap-x-25">
+        <div class="lg:w-110 w-60">
+          <img src="./images/همکاری-با-فیلم-نت-Main-Banner-500-500.jpg" alt="" class="rounded-2xl">
+        </div><br>
+        <div>
+        <p class="lg:text-6xl text-4xl lg:text-right font-extrabold">فیلم نت</p><br>
+        <div class="lg:flex justify-between sm:block">
+        <p class="lg:text-3xl text-2xl max-w-100 lg:text-right">تماشای فیلم و سریال بدون حق اشتراک</p><br>
+        <a href="#" target="_blank" class="rounded-xl bg-pink-700 text-center lg:px-0 md:px-8 p-2 w-35 h-9 text-sm self-end font-bold text-white px-45">اطلاعات بیشتر</a>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide gap-x-25">
+        <div class="lg:w-110 w-60">
+          <img src="./images/فیلیمو-1404-1080-1080.jpg" alt="" class="rounded-2xl">
+        </div><br>
+        <div>
+        <p class="lg:text-6xl text-4xl lg:text-right font-extrabold">فیلیمو</p><br>
+        <div class="lg:flex justify-between sm:block gap-10">
+        <p class="lg:text-3xl text-2xl">با اینترنت رایتل، رایگان فیلم ببینید!</p><br>
+        <a href="#" target="_blank" class="rounded-xl bg-pink-700 text-center lg:px-0 md:px-8 p-2 w-35 h-9 text-sm font-bold text-white px-45">اطلاعات بیشتر</a>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide gap-x-25">
+        <div class="lg:w-110 w-60">
+          <img src="./images/اینترنتت-رو-رایگان-کن-Main-Banner-600-600.jpg" alt="" class="rounded-2xl">
+        </div><br>
+        <div>
+        <p class="lg:text-6xl text-4xl max-w-160 lg:text-right font-extrabold">اینترنتت رو رایگان کن!</p><br>
+        <div class="lg:flex justify-between sm:block">
+        <p class="lg:text-3xl text-2xl max-w-100 lg:text-right">10 گیگابایت اینترنت برای معرفی هر دوست</p><br>
+        <a href="#" target="_blank" class="rounded-xl bg-pink-700 text-center lg:px-0  md:px-8 self-end p-2 w-35 h-9 text-sm font-bold text-white px-45">اطلاعات بیشتر</a>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide gap-x-25">
+        <div class="lg:w-110 w-60">
+          <img src="./images/رایتل-من-Main-Banner-600-600.jpg" alt="" class="rounded-2xl">
+        </div><br>
+        <div>
+        <p class="lg:text-6xl text-4xl lg:text-right font-extrabold">سهولت استفاده از خدمات</p><br>
+        <p class="lg:text-3xl text-2xl lg:text-right">با اپلیکیشن رایتل من</p><br>
+        <div class="lg:flex justify-between sm:block">
+        <p class="lg:text-2xl text-2xl">5 گیگابایت اینترنت هدیه نصب</p><br>
+        <a href="#" target="_blank" class="rounded-xl bg-pink-700 text-center lg:px-0 md:px-8 p-2 w-35 h-9 text-sm font-bold text-white px-45">اطلاعات بیشتر</a>
+          </div>
+        </div>
+      </div>
+    </div>
+      <div class="swiper-button-next">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5"><path fill-rule="evenodd" d="M11.78 5.22a.75.75 0 0 1 0 1.06L8.06 10l3.72 3.72a.75.75 0 1 1-1.06 1.06l-4.25-4.25a.75.75 0 0 1 0-1.06l4.25-4.25a.75.75 0 0 1 1.06 0Z" clip-rule="evenodd" />
+          </svg>
+        </div>
+      <div class="swiper-button-prev">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5"><path fill-rule="evenodd" d="M8.22 5.22a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.75.75 0 0 1-1.06-1.06L11.94 10 8.22 6.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+          </svg>
+        </div>
+          <!-- <div class="swiper-pagination"></div> -->
+      </div>
+
+    <div class="flex flex-wrap gap-3 justify-center">
+      <div class="border-l-1 border-l-gray-400 w-53 cursor-pointer">
+      <div class="w-50 h-30 hover:rounded-2xl hover:shadow-2xl hover:border-gray-400 hover:border-1 rounded-2xl border-gray-400 border-1 md:border-0">
+        <img src="./images/sim-managment-primary.svg" class="pr-18 pt-5" alt="">
+        <p class="text-center mt-3">خرید سیم کارت</p>
+      </div>
+    </div>
+      <div class="sm:border-l-1 border-l-gray-400 w-53 cursor-pointer">
+      <div class="w-50 h-30 hover:rounded-2xl hover:shadow-2xl hover:border-gray-400 hover:border-1 rounded-2xl border-gray-400 border-1 md:border-0">
+        <img src="./images/mix-primary.svg" class="pr-18 pt-5" alt="">
+        <p class="text-center mt-3">خرید بسته</p>
+      </div>
+    </div>
+    <div class="border-l-1 border-l-gray-400 w-53 cursor-pointer">
+      <div class="w-50 h-30 hover:rounded-2xl hover:shadow-2xl hover:border-gray-400 hover:border-1 rounded-2xl border-gray-400 border-1 md:border-0">
+        <img src="./images/charge-primary.svg" class="pr-18 pt-5" alt="">
+        <p class="text-center mt-3">افزایش اعتبار</p>
+      </div>
+    </div>
+    <div class="sm:border-l-1 border-l-gray-400 w-53 cursor-pointer">
+      <div class="w-50 h-30 hover:rounded-2xl hover:shadow-2xl hover:border-gray-400 hover:border-1 rounded-2xl border-gray-400 border-1 md:border-0">
+        <img src="./images//paybill-primary.svg" class="pr-18 pt-5" alt="">
+        <p class="text-center mt-3">پرداخت صورتحساب</p>
+      </div>
+    </div>
+    <div class="border-l-1 border-l-gray-400 w-53 cursor-pointer">
+      <div class="w-50 h-30 hover:rounded-2xl hover:shadow-2xl hover:border-gray-400 hover:border-1 rounded-2xl border-gray-400 border-1 md:border-0">
+        <img src="./images/store-primary-.svg" class="pr-18 pt-5" alt="">
+        <p class="text-center mt-3">دریافت نمایندگی</p>
+      </div>
+    </div>
+    <div class="border-l-0 w-53 cursor-pointer">
+      <div class="w-50 h-30 hover:rounded-2xl hover:shadow-2xl hover:border-gray-400 hover:border-1 rounded-2xl border-gray-400 border-1 md:border-0">
+        <img src="./images/coverage-primary.svg" class="pr-18 pt-5" alt="">
+        <p class="text-center mt-3">نواحی تحت پوشش</p>
+        </div>
+      </div>
+    </div>
+  
+    <div class="mt-20">
+      <p class="flex justify-center text-3xl font-extrabold text-fuchsia-900">پیشنهادهای ویژه</p><br>
+      <div class="flex justify-center h-12 gap-0 font-bold text-sm">
+      <div class="text-center pt-3 w-40 rounded-s-xl bg-purple-300 border-b-4 border-b-pink-800 text-pink-900 cursor-pointer"><p>ویژه</p></div>
+      <div class="text-center pt-3 w-40 rounded-e-xl bg-gray-200 text-gray-800 cursor-pointer"><p>خدمات ارتباطی نوین</p></div>
+    </div>
+  </div>
+
+  <div class="md:flex">
+  <div class="bg-fuchsia-400 lg:w-175 w-110 xl:h-150 rounded-2xl lg:m-11 mr-5 mt-10">
+    <p class="text-3xl font-extrabold text-fuchsia-950 flex justify-center pt-4">اپلیکیشن رایتل من</p>
+    <p class="text-fuchsia-950 flex justify-center p-4 font-bold">با نصب اپلیکیشن رایتل من 5 گیگابایت اینترنت هدیه دریافت کنید</p>
+    <div class=" flex justify-center mb-4">
+    <a href="#" class="text-white bg-fuchsia-600 w-40 h-9 pt-2 rounded-2xl text-center font-bold text-sm">اطلاعات بیشتر</a>
+    </div>
+    <img src="./images/700x447-MyRightel-1.jpg" class="rounded-b-2xl" alt="">
+  </div>
+  <div class="relative xl:w-170 lg:w-188 md:w-145 w-110 md:mt-11 md:me-5 mr-5 mt-5">
+    <img src="./images/Special-Offer-1400-600-سیم-کارت-دائمی.jpg" class="rounded-2xl" alt="">
+    <div class="absolute lg:left-70 xl:top-20 lg:top-5 right-6 top-6 text-white">
+    <p class="w-80 text-2xl font-bold">سیم کارت های طرح X</p><br>
+    <p>پرگیگ ترین سیم کارت کشور!</p><br>
+    <div class="flex justify-start">
+    <a href="#" class="text-white bg-fuchsia-600 w-40 h-9 pt-2 rounded-2xl text-center font-bold text-sm">اطلاعات بیشتر</a>
+    </div>
+  </div>
+  <div class="relative">
+    <img src="./images/600x1400-Friends-1.jpg" class="mt-6 rounded-2xl" alt="">
+    <div class="absolute lg:left-70 xl:top-20 lg:top-5 xl:w-full lg:w-50 right-6 top-6 text-white">
+    <p class="w-80 text-2xl font-bold">اینترنتت رو رایگان کن!</p><br>
+    <p>10 گیگابایت اینترنت رایگان برای معرفی هر دوست</p><br>
+    <div class="flex justify-start">
+    <a href="#" class="text-white bg-fuchsia-600 w-40 h-9 pt-2 rounded-2xl text-center font-bold text-sm">اطلاعات بیشتر</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <p class="flex justify-center text-3xl font-extrabold text-gray-900 mt-10">پر بازدیدترین ها</p>
+    <div class="flex flex-wrap gap-8 justify-center mt-8">
+      <div class="w-50 h-56 hover:bg-gray-200 cursor-pointer hover:rounded-2xl hover:shadow-2xl hover:border-gray-400 hover:border-1 rounded-2xl border-gray-400 border-1 md:border-0">
+        <img src="./images/USSD-gray.svg" class="pt-10 w-25 mr-12" alt="">
+        <p class="text-center mt-3 text-gray-600 font-bold">کد دستوری</p>
+      </div>
+      <div class="w-50 h-56 hover:bg-gray-200 cursor-pointer hover:rounded-2xl hover:shadow-2xl hover:border-gray-400 hover:border-1 rounded-2xl border-gray-400 border-1 md:border-0">
+        <img src="./images/filimo-black.svg" class="pt-10 w-25 mr-12" alt="">
+        <p class="text-center mt-3 text-gray-600 font-bold">فیلیمو</p>
+      </div>
+      <div class="w-50 h-56 hover:bg-gray-200 cursor-pointer hover:rounded-2xl hover:shadow-2xl hover:border-gray-400 hover:border-1 rounded-2xl border-gray-400 border-1 md:border-0">
+        <img src="./images/Inquiry-gray.svg" class="pt-10 w-25 mr-12" alt="">
+        <p class="text-center mt-3 text-gray-600 font-bold">استعلام وضعیت سیم کارت</p>
+      </div>
+      <div class="w-50 h-56 hover:bg-gray-200 cursor-pointer hover:rounded-2xl hover:shadow-2xl hover:border-gray-400 hover:border-1 rounded-2xl border-gray-400 border-1 md:border-0">
+        <img src="./images/dooz.svg" class="pt-10 w-25 mr-12" alt="">
+        <p class="text-center mt-3 text-gray-600 font-bold">بسته دست دوز</p>
+      </div>
+      <div class="w-50 h-56 hover:bg-gray-200 cursor-pointer hover:rounded-2xl hover:shadow-2xl hover:border-gray-400 hover:border-1 rounded-2xl border-gray-400 border-1 md:border-0">
+        <img src="./images/x100-black.svg" class="pt-10 w-25 mr-12" alt="">
+        <p class="text-center mt-3 text-gray-600 font-bold">سیم کارت X100</p>
+      </div>
+      <div class="w-50 h-56 hover:bg-gray-200 cursor-pointer hover:rounded-2xl hover:shadow-2xl hover:border-gray-400 hover:border-1 rounded-2xl border-gray-400 border-1 md:border-0">
+        <img src="./images/referral-black.svg" class="pt-10 w-25 mr-12" alt="">
+        <p class="text-center mt-3 text-gray-600 font-bold">معرفی به دوستان</p>
+      </div>
+    </div>
+    <br>
+
+      <div class="relative ml-15 mr-15">
+        <img src="./images/Bg-mnp-1.jpg" class="rounded-2xl hidden h-100 xl:flex" alt="">
+        <img src="./images/Bg-mnp-1-m.jpg" class="rounded-2xl md:hidden" alt="">
+        <img src="./images/Bg-mnp-1-tablet.jpg" class="rounded-2xl hidden md:flex xl:hidden" alt="">
+        <div class="absolute xl:top-25 xl:right-180 lg:top-18 lg:right-100 md:top-3 md:right-55 top-15 right-9 text-white">
+          <p class="font-extrabold text-4xl">ترابرد شماره به رایتل</p><br>
+          <p class="xl:max-w-150 max-w-80">شما می‌توانید از طریق این سامانه نسبت به ثبت‌ درخواست ترابرد شماره تلفن همراه خود به رایتل اقدام نمایید. پس از ثبت‌نام و تکمیل فرآیند ترابرد، امکان بهره‌مندی از خدمات نوین ارتباطی اپراتور پیشگام بدون تغییر شماره، برای شما فراهم می‌گردد.</p>
+          <div class="md:flex xl:mt-20 mt-10 gap-3">
+            <a href="#" class="bg-lime-400 md:h-10 md:w-50 text-center font-bold text-sm md:mr-0 mr-17 p-4 pt-2 rounded-2xl">درخواست ترابرد شماره</a>
+            <br class="md:hidden"><br class="md:hidden">
+            <a href="#" class="border-1 hover:bg-fuchsia-700 hover:border-0 md:h-10 md:w-50 md:mr-0 mr-17 text-center p-4 font-bold text-sm pt-2 rounded-2xl">درخواست ترابرد شماره</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="relative mr-15 mt-30">
+        <p class="text-4xl font-bold">اپلیکیشن رایتل من</p><br>
+        <p>نرم افزار همراه رایتل با قابلیت های متنوع و هیجان انگیز</p>
+        <p class="lg:mt-15 mt-8 lg:text-2xl text-xl font-bold text-gray-800">مدیریت حساب، پرداخت قبض، خرید بسته و …</p>
+        <div class="md:hidden flex justify-center ml-15">
+        <a href="#" class="border-1 border-black  rounded-2xl flex mt-15 justify-center p-2 text-sm font-bold w-35 h-10">دانلود اپلیکیشن</a>
+          </div>
+        <div class="md:block flex justify-center ml-15">
+        <a href="#" class="bg-fuchsia-700 text-white rounded-2xl flex mt-5 md:mt-15 justify-center p-2 text-sm font-bold w-35 h-10">اطلاعات بیشتر</a>
+          </div>
+        <div class="hidden lg:flex mt-20 gap-10">
+          <img src="./images/android.svg" class="bg-gray-200 p-5 rounded-2xl cursor-pointer hover:border-1 border-blue-900" width="220px" alt="">
+          <img src="./images/ios.svg" class="bg-gray-200 p-5 rounded-2xl cursor-pointer hover:border-1 border-blue-900" width="220px" alt="">
+          <img src="./images/myrightel.svg" class="bg-gray-200 p-5 rounded-2xl cursor-pointer hover:border-1 border-blue-900" width="220px" alt="">
+        </div>
+        <div class="absolute md:left-0 md:bottom-0 md:top-0 top-80">
+          <img src="./images/1080.png" class="w-125 md:w-80 lg:w-90 xl:w-125" alt="">
+        </div>
+      </div>
+    <br>
+
+        <!-- Swiper 2-->
+  <div class="xl:w-[90%] xl:h-[80%] lg:h-[73%] md:w-[120%] md:h-[60%] w-[90%] h-[80%] xl:mr-20 mr-6 md:mt-10 mt-120">
+  <div class="swiper mySwiper-2">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide flex flex-col border-1 hover:border-gray-400 border-gray-200 rounded-2xl">
+        <div class="lg:mb-6 md:mb-3 xl:mb-5 mb-10">
+        <div class="w-[100] h-72 md:h-47 xl:h-72 lg:h-65">
+        <img src="./images/خبر.jpg" class="rounded-2xl" alt="">
+        </div>
+        <div class="font-bold text-right mr-5">
+          <p class="text-xs text-gray-700 mt-3">29 شهریور 1404 - اخبار</p>
+          <p class="text-xl mt-2">تفاهم نامه همکاری میان رایتل و منطقه آزاد تجاری صنعتی  ارس</p>
+          <p class="text-xs text-gray-700 mt-2">تفاهم نامه همکاری مشترک میان شرکت خدمات ارتباطی رایتل و سازمان منطقه آزاد تجاری صنعتی ارس در روز 25 شهریور ماه، به امضا رسید.</p>
+        </div>
+        <div class="flex justify-end ml-5 lg:mt-6 md:mt-2 xl:mt-5 mt-9.5">
+          <a href="" class="hover:bg-fuchsia-100 text-fuchsia-700 rounded-2xl flex justify-center p-2 text-sm font-bold w-35 h-10">اطلاعات بیشتر</a>          
+        </div>
+      </div>
+    </div>
+      <div class="swiper-slide flex flex-col border-1 hover:border-gray-400 border-gray-200 rounded-2xl">
+        <div class="lg:mb-6 md:mb-3 xl:mb-5 mb-10">
+        <div class="w-[100] h-72 md:h-47 xl:h-72 lg:h-65">
+        <img src="./images/IMG-20250917-WA0007.jpg" class="rounded-2xl" alt="">
+        </div>
+        <div class="font-bold text-right mr-5">
+          <p class="text-xs text-gray-700 mt-3">26 شهریور 1404 - اخبار</p>
+          <p class="text-xl mt-2">امضای تفاهم نامه همکاری میان رایتل و ماشین سازی تبریز</p>
+          <p class="text-xs text-gray-700 mt-2">تفاهم نامه همکاری مشترک میان شرکت خدمات ارتباطی رایتل و گروه ماشین سازی تبریز در روز 25 شهریور ماه، به امضاء رسید.</p>
+        </div>
+        <div class="flex justify-end ml-5 lg:mt-6 md:mt-2 xl:mt-5 mt-9.5">
+          <a href="" class="hover:bg-fuchsia-100 text-fuchsia-700 rounded-2xl flex justify-center p-2 text-sm font-bold w-35 h-10">اطلاعات بیشتر</a>          
+        </div>
+      </div>
+    </div>
+      <div class="swiper-slide flex flex-col border-1 hover:border-gray-400 border-gray-200 rounded-2xl">
+        <div class="lg:mb-6 md:mb-3 xl:mb-5 mb-10">
+        <div class="w-[100] h-72 md:h-47 xl:h-72 lg:h-65">
+        <img src="./images/news-scaled.jpg" class="rounded-2xl" alt="">
+        </div>
+        <div class="font-bold text-right mr-5">
+          <p class="text-xs text-gray-700 mt-3">16 شهریور 1404 - اخبار</p>
+          <p class="text-xl mt-2 block md:hidden lg:block">رونمایی از سکوی جامع خدمات رفاهی صندوق بازنشستگی کشوری با همکاری رایتل</p>
+          <p class="text-xl mt-2 hidden md:block lg:hidden">رونمایی از سکوی جامع خدمات رفاهی صندوق...</p>
+          <p class="text-xs text-gray-700 mt-2">آیین رونمایی از «سکوی جامع خدمات رفاهی صندوق بازنشستگی  کشوری» با همکاری شرکت خدمات ارتباطی رایتل برگزار شد.</p>
+        </div>
+        <div class="flex justify-end ml-5 lg:mt-6 md:mt-2 xl:mt-5 mt-9.5">
+          <a href="" class="hover:bg-fuchsia-100 text-fuchsia-700 rounded-2xl flex justify-center p-2 text-sm font-bold w-35 h-10">اطلاعات بیشتر</a>          
+        </div>
+      </div>
+    </div>
+      <div class="swiper-slide flex flex-col border-1 hover:border-gray-400 border-gray-200 rounded-2xl">
+        <div class="lg:mb-6 md:mb-5 xl:mb-5 mb-10">
+        <div class="w-[100] h-72 md:h-47 xl:h-72 lg:h-65">
+        <img src="./images/ریسایز-خبری.jpg" class="rounded-2xl" alt="">
+        </div>
+        <div class="font-bold text-right mr-5">
+          <p class="text-xs text-gray-700 mt-3">18 مرداد 1404 - اخبار</p>
+          <p class="text-xl mt-2">رایتل، همقدم همیشگی صدای حقیقت</p>
+          <p class="text-xs text-gray-700 mt-2">شرکت خدمات ارتباطی رایتل به مناسبت روز خبرنگار، بسته اینترنت 200 گیگابایتی هدیه خبرنگاران را فعال کرد.</p>
+        </div>
+        <div class="flex justify-end ml-5 lg:mt-13 md:mt-0 xl:mt-12 mt-16.5">
+          <a href="" class="hover:bg-fuchsia-100 text-fuchsia-700 rounded-2xl flex justify-center p-2 text-sm font-bold w-35 h-10">اطلاعات بیشتر</a>          
+        </div>
+      </div>
+    </div>
+      <div class="swiper-slide flex flex-col border-1 hover:border-gray-400 border-gray-200 rounded-2xl">
+        <div class="lg:mb-2 md:mb-3 xl:mb-5 mb-10">
+        <div class="w-[100] h-72 md:h-47 xl:h-72 lg:h-65">
+        <img src="./images/Artboard-1.jpg" class="rounded-2xl" alt="">
+        </div>
+        <div class="font-bold text-right mr-5">
+          <p class="text-xs text-gray-700 mt-3">12 خرداد 1404 - اخبار</p>
+          <p class="text-xl mt-2 block md:hidden lg:block">فناوری اطلاعات و ارتباطات؛ پیشران تحول در دانشگاه های نسل پنجم</p>
+          <p class="text-xl mt-2 hidden md:block lg:hidden">فناوری اطلاعات و ارتباطات؛ پیشران تحول در دانشگاه ها...</p>
+          <p class="text-xs text-gray-700 mt-2">مراسم بزرگداشت روز اقتصاد دانشگاه علامه طباطبایی با حضور احمد میدری، وزیر تعاون، کارو رفاه اجتماعی، جمعی از مدیران عالی رتبه کشور، اساتید...</p>
+        </div>
+        <div class="flex justify-end ml-5 lg:mt-6 md:mt-2 xl:mt-5 mt-9.5">
+          <a href="" class="hover:bg-fuchsia-100 text-fuchsia-700 rounded-2xl flex justify-center p-2 text-sm font-bold w-35 h-10">اطلاعات بیشتر</a>          
+        </div>
+      </div>
+    </div>
+      <div class="swiper-slide flex flex-col border-1 hover:border-gray-400 border-gray-200 rounded-2xl">
+        <div class="lg:mb-6 md:mb-3 xl:mb-5 mb-10">
+        <div class="w-[100] h-72 xl:h-72 md:h-47 lg:h-65">
+        <img src="./images/fa4d8eb1-688c-4b2e-a59e-af4cb1e2361f_pjrf.jpg" class="rounded-2xl" alt="">
+        </div>
+        <div class="font-bold text-right mr-5">
+          <p class="text-xs text-gray-700 mt-3">12 خرداد 1404 - اخبار</p>
+          <p class="text-xl mt-2 block md:hidden lg:block">رایتل: آماده همکاری با فعالان حوزه بلاکچین برای خلق آینده دیجیتال کشور هستیم</p>
+          <p class="text-xl mt-2 hidden md:block lg:hidden">رایتل: آماده همکاری با فعالان حوزه بلاکچین برای خلق آینده...</p>
+          <p class="text-xs text-gray-700 mt-2">نشست خبری نخستین کنفرانس بین المللی بلاکچین ایران (دی بلاک) با حضور و حمایت شرکت خدمات ارتباطی رایتل برگزار شد.</p>
+        </div>
+        <div class="flex justify-end ml-5 lg:mt-6 md:mt-2 xl:mt-5 mt-9.5">
+          <a href="" class="hover:bg-fuchsia-100 text-fuchsia-700 rounded-2xl flex justify-center p-2 text-sm font-bold w-35 h-10">اطلاعات بیشتر</a>          
+        </div>
+      </div>
+    </div>
+    </div>
+    <!-- <div class="swiper-pagination"></div> -->
+  </div>
+</div>
+
+<div class="flex justify-center">
+  <a href="#" class="border-1 border-gray-300 flex justify-center lg:w-100 w-80 h-10 rounded-2xl p-2 font-bold text-fuchsia-700 text-sm">نمایش همه اخبار</a>
+</div>
+
+    <footer class="relative mt-30 bg-gray-200 w-[100%] lg:h-200 md:h-230 h-250">
+      <div class="flex justify-center">
+      <nav class="flex lg:flex-row lg:justify-between flex-col mt-15 bg-gray-300 rounded-2xl lg:h-18 h-63 pr-5 lg:pr-0 w-[90%]">
+        <ul class="flex lg:flex-row flex-col lg:gap-15 gap-5 pt-5 pr-10">
+          <li class="flex"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"><path fill="#191C1D" d="M12 21a.968.968 0 0 1-.713-.288A.968.968 0 0 1 11 20a.97.97 0 0 1 .287-.712A.968.968 0 0 1 12 19h7v-7.1c0-1.95-.68-3.604-2.038-4.963C15.604 5.58 13.95 4.9 12 4.9c-1.95 0-3.604.68-4.963 2.037C5.68 8.296 5 9.95 5 11.9V17a.97.97 0 0 1-.287.712A.967.967 0 0 1 4 18c-.55 0-1.02-.196-1.413-.587A1.926 1.926 0 0 1 2 16v-2c0-.35.087-.68.263-.988.175-.308.42-.554.737-.737l.075-1.325a8.654 8.654 0 0 1 .987-3.15 9.476 9.476 0 0 1 1.975-2.525A8.774 8.774 0 0 1 8.762 3.6C9.787 3.2 10.867 3 12 3s2.208.2 3.225.6c1.017.4 1.925.954 2.725 1.663a8.975 8.975 0 0 1 1.975 2.512c.517.967.85 2.017 1 3.15l.075 1.3c.317.15.563.375.738.675.175.3.262.617.262.95v2.3c0 .333-.087.65-.262.95-.175.3-.421.525-.738.675V19c0 .55-.196 1.02-.587 1.413A1.926 1.926 0 0 1 19 21h-7Zm-3-7a.967.967 0 0 1-.713-.287A.968.968 0 0 1 8 13c0-.283.096-.52.287-.713A.967.967 0 0 1 9 12c.283 0 .52.096.713.287.191.192.287.43.287.713s-.096.52-.287.713A.967.967 0 0 1 9 14Zm6 0a.968.968 0 0 1-.713-.287A.968.968 0 0 1 14 13c0-.283.096-.52.287-.713A.968.968 0 0 1 15 12c.283 0 .52.096.713.287.191.192.287.43.287.713s-.096.52-.287.713A.968.968 0 0 1 15 14Zm-8.975-1.55c-.117-1.767.417-3.283 1.6-4.55S10.283 6 12.05 6c1.483 0 2.787.47 3.912 1.412S17.768 9.558 18 11.025A7.895 7.895 0 0 1 13.812 9.8a7.965 7.965 0 0 1-2.937-3.25 7.978 7.978 0 0 1-1.688 3.563 7.993 7.993 0 0 1-3.162 2.337Z"/></svg> &nbsp;&nbsp;تماس با ما</li>
+          <li>از خطوط رایتلی: 200</li>
+          <li>از سایر خطوط: 09202000000</li>
+        </ul>
+        <ul class="flex lg:flex-row flex-col pt-5 lg:gap-15 gap-5 pl-10">
+          <li><a href="#" class="flex"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"><path fill="#191C1D" d="M11.948 22.618H3.114c-.892 0-1.107-.206-1.107-1.072 0-3.191 0-6.373.009-9.564 0-.266-.078-.403-.3-.54C.651 10.78.033 9.836 0 8.558a1.046 1.046 0 0 1 .146-.574A809.117 809.117 0 0 0 3.5 2.049c.214-.386.506-.549.935-.549h15.13c.403 0 .695.146.91.523 1.115 1.999 2.247 3.98 3.38 5.97.196.343.17.695.11 1.038-.18 1.047-.737 1.853-1.646 2.393-.292.172-.378.36-.378.678.009 3.174.009 6.347.009 9.52 0 .79-.197.996-.978.996h-9.024Zm3.946-1.312c1.441 0 2.89-.009 4.332.008.326 0 .454-.086.454-.437a1428.26 1428.26 0 0 1 0-8.535c0-.292-.085-.412-.377-.42-.978-.052-1.793-.472-2.419-1.21-.18-.214-.257-.154-.42.009-1.57 1.664-3.706 1.647-5.292-.043-.155-.163-.215-.137-.352.009-1.579 1.68-3.714 1.698-5.301.034-.163-.172-.24-.206-.42 0-.618.729-1.416 1.15-2.376 1.2-.343.018-.43.155-.42.473.016 1.089.008 2.17.008 3.259 0 1.733.008 3.457-.009 5.19 0 .343.095.506.463.48.284-.026.575 0 .858-.009.635 0 .635 0 .635-.643 0-1.784-.009-3.577 0-5.361.009-1.261.695-2.162 1.733-2.316a8.206 8.206 0 0 1 2.05-.043c1.355.137 2.058.935 2.067 2.307 0 1.845.008 3.689-.009 5.533-.008.42.137.532.54.532 1.425-.035 2.84-.017 4.255-.017ZM12 7.59h9.65c.497 0 .497-.017.266-.429-.738-1.304-1.484-2.607-2.213-3.92-.172-.309-.378-.437-.738-.437-4.64.008-9.29.008-13.93 0-.369 0-.566.128-.738.437a547.694 547.694 0 0 1-2.153 3.817c-.308.54-.308.54.292.54C5.626 7.59 8.809 7.59 12 7.59ZM6.57 17.995c0 .96.009 1.912-.008 2.873-.009.335.103.455.446.446a55.9 55.9 0 0 1 2.402 0c.368.009.463-.137.454-.48-.017-1.055-.008-2.11-.008-3.174 0-.832.008-1.655-.009-2.487-.017-.652-.326-.944-.96-.953-.447-.008-.884 0-1.33 0-.72.01-.995.275-.995.978.008.935.008 1.862.008 2.797Zm13.887-7.343c.935.009 1.75-.54 2.093-1.33.146-.334.052-.428-.291-.428-1.141.008-2.282 0-3.423.008-.437 0-.48.06-.283.472.386.84 1.072 1.218 1.904 1.278Zm-17.138 0c.944.035 1.836-.54 2.162-1.32.112-.275.112-.43-.257-.43-1.184.009-2.368.009-3.543 0-.326 0-.352.138-.24.395.377.866 1.064 1.26 1.878 1.355Zm11.537-1.75c-.617 0-1.226.009-1.844 0-.223 0-.317.052-.24.3.232.773 1.15 1.442 2.041 1.45.893.017 1.827-.626 2.076-1.398.086-.274 0-.36-.274-.352-.584.009-1.175 0-1.759 0Zm-5.66 0h-1.76c-.402 0-.445.07-.282.455.317.755 1.235 1.33 2.058 1.295.875-.034 1.699-.617 1.99-1.398.103-.274.034-.36-.248-.352-.592.009-1.176 0-1.759 0Z"/><path fill="#191C1D" d="M15.388 18.775c-.532 0-1.055.009-1.587 0-.926-.017-1.638-.677-1.68-1.604a34.27 34.27 0 0 1 0-2.659 1.594 1.594 0 0 1 1.466-1.535 20.123 20.123 0 0 1 3.594-.009c.866.077 1.407.635 1.492 1.501.103.97.103 1.939-.017 2.908-.094.78-.763 1.364-1.56 1.398h-1.707Zm.009-4.546h-1.458c-.352 0-.532.155-.524.515.009.746.009 1.484 0 2.23-.008.36.163.532.515.54.986.009 1.973.009 2.96 0 .334 0 .531-.163.531-.523v-2.23c0-.352-.163-.532-.523-.532h-1.501Z"/></svg> &nbsp;&nbsp;مراکز امور مشتریان</a></li>
+          <li><a href="#" class="flex"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"><path fill="#191C1D" fill-rule="evenodd" d="M23.96 7.603H24v.07a3.448 3.448 0 0 1-.97 2.335 3.289 3.289 0 0 1-1.53.893v10.793c0 .445-.387.806-.864.806H3.364c-.477 0-.864-.36-.864-.806V10.901a3.29 3.29 0 0 1-1.53-.893A3.449 3.449 0 0 1 0 7.603c.406-.734.813-1.458 1.218-2.18.63-1.125 1.26-2.247 1.883-3.394.225-.415.53-.59.98-.59h15.844c.422 0 .727.157.952.563a772.03 772.03 0 0 0 2.99 5.433l.094.168Zm-22.21 0h20.538l-.047-.076-.65-1.178s-1.117-2.02-1.666-3.037c-.18-.332-.252-.332-.629-.332-4.86.009-9.728.009-14.587 0-.386 0-.45 0-.629.332-.745 1.375-1.5 2.74-2.254 4.106l-.076.185Zm4.457 1.646a3.393 3.393 0 0 1-.556.759A3.285 3.285 0 0 1 4 10.929v10.03h4.5v-4.446c0-1.096 1-2.232 2-2.489 1-.257 1.75-.257 3 0s2 1.473 2 2.569v4.366H20v-10.03a3.285 3.285 0 0 1-1.651-.921 3.39 3.39 0 0 1-.556-.758 3.392 3.392 0 0 1-.556.758 3.266 3.266 0 0 1-2.34.996c-.878 0-1.72-.358-2.341-.996A3.396 3.396 0 0 1 12 9.249a3.39 3.39 0 0 1-.556.759 3.266 3.266 0 0 1-2.34.996c-.879 0-1.72-.358-2.341-.996a3.393 3.393 0 0 1-.556-.759ZM10 17.08v3.88h4v-3.88c0-.939-.672-1.7-1.586-1.7h-.828c-.914 0-1.586.761-1.586 1.7Z" clip-rule="evenodd"/></svg> &nbsp;&nbsp;نمایندگان فروش و خدمات</a></li>
+        </ul>
+      </nav>
+      </div>
+
+      <div class="mt-15 text-gray-500 text-sm font-bold flex lg:flex-row md:justify-evenly xl:gap-0 lg:gap-5 mr-15 lg:mr-0 flex-col">
+        <ul>
+          <li class="text-gray-900 mb-7">محصولات و خدمات</li>
+          <hr class="w-80 xl:w-80 md:w-150 lg:w-50 border-1 text-gray-400">
+          <li class="hidden lg:block mt-2.5 p-2 rounded-2xl h-10 hover:text-fuchsia-700 hover:bg-gray-300"><a href="#">خرید بسته اینترنتی</a></li>
+          <li class="hidden lg:block mt-2.5 p-2 rounded-2xl h-10 hover:text-fuchsia-700 hover:bg-gray-300"><a href="#">خرید شارژ</a></li>
+          <li class="hidden lg:block mt-2.5 p-2 rounded-2xl h-10 hover:text-fuchsia-700 hover:bg-gray-300"><a href="#">کدهای دستوری</a></li>
+          <li class="hidden lg:block mt-2.5 p-2 rounded-2xl h-10 hover:text-fuchsia-700 hover:bg-gray-300"><a href="#">خرید و ثبت نام سیم کارت</a></li>
+          <li class="hidden lg:block mt-2.5 p-2 rounded-2xl h-10 hover:text-fuchsia-700 hover:bg-gray-300"><a href="#">تعرفه ها</a></li>
+          <li class="hidden lg:block mt-2.5 p-2 rounded-2xl h-10 hover:text-fuchsia-700 hover:bg-gray-300"><a href="#">خدمات سازمانی</a></li>
+        </ul>
+        <ul>
+          <li class="text-gray-900 mb-7 mt-5 lg:mt-0">دسترسی کوتاه</li>
+          <hr class="w-80 xl:w-80 md:w-150 lg:w-50 border-1 text-gray-400">
+          <li class="hidden lg:block mb-5 mt-5"><a href="#">ورود به رایتل من</a></li>
+          <li class="hidden lg:block mb-5"><a href="#">استعلام وضعیت سیم کارت</a></li>
+          <li class="hidden lg:block mb-5"><a href="#">راهنمای تنظیمات</a></li>
+          <li class="hidden lg:block mb-5"><a href="#">پرسش های متداول</a></li>
+          <li class="hidden lg:block mb-5"><a href="#">نقشه سایت</a></li>
+          <li class="hidden lg:block mb-5"><a href="#">رهگیری مرسوله پستی</a></li>
+          <li class="hidden lg:block mb-5"><a href="#">ارتباط با تامین کنندگان</a></li>
+          <li class="hidden lg:block mb-5"><a href="#">سنجش مصرف اینترنت</a></li>
+        </ul>
+        <ul>
+          <li class="text-gray-900 mb-7 mt-5 lg:mt-0">درگاه های مرتبط</li>
+          <hr class="w-80 xl:w-80 md:w-150 lg:w-60 border-1 text-gray-400">
+          <li class="hidden lg:block mb-5 mt-5"><a href="#">شرکت سرمایه گذاری تامین اجتماعی (شستا)</a></li>
+          <li class="hidden lg:block mb-5 max-w-60"><a href="#">سامانه خبری حراست شرکت سرمایه گذاری تامین اجتماعی</a></li>
+          <li class="hidden lg:block mb-5"><a href="#">سامانه اخبار و گزارشات رایتل</a></li>
+          <li class="hidden lg:block mb-5"><a href="#">سازمان تنظیم مقررات و ارتباط رادیویی</a></li>
+          <li class="hidden lg:block mb-5"><a href="#">استعلام تعداد خطوط مشترکین</a></li>
+          <li class="hidden lg:block mb-5"><a href="#">سازمان تامین اجتماعی</a></li>
+          <li class="hidden lg:block mb-5"><a href="#">پایگاه دولت همراه</a></li>
+          <li class="hidden lg:block mb-5"><a href="#">سامانه دسترسی آزاد به اطلاعات</a></li>
+          <li class="hidden lg:block mb-5"><a href="#">سامانه پیگیری اجرای قانون اساسی</a></li>
+        </ul>
+        <ul class="lg:static absolute bottom-20 md:bottom-10">
+          <li class="text-gray-900 mb-7">رایتل در شبکه های اجتماعی</li>
+          <hr class="w-80 xl:w-80 md:w-150 lg:w-60 border-1 text-gray-400">
+          <div class="flex mt-5 gap-2">
+          <li class="mb-5"><a href="#"><img src="./images/reader.svg" alt=""></a></li>
+          <li class="mb-5"><a href="#"><img src="./images/twitter.svg" alt=""></a></li>
+          <li class="mb-5"><a href="#"><img src="./images/linkedin.svg" alt=""></a></li>
+          <li class="mb-5"><a href="#"><img src="./images/instagram.svg" alt=""></a></li>
+          <li class="mb-5"><a href="#"><img src="./images/aparat.svg" alt=""></a></li>
+          <li class="mb-5"><a href="#"><img src="./images/soroush.svg" alt=""></a></li>
+          <li class="mb-5"><a href="#"><img src="./images/Robika.svg" alt=""></a></li>
+          <li class="mb-5"><a href="#"><img src="./images/Gap.svg" alt=""></a></li>
+          <li class="mb-5"><a href="#"><img src="./images/virasty.svg" alt=""></a></li>
+          </div>
+        </ul>
+      </div>
+      <div class="flex gap-5 absolute xl:right-280 xl:top-100 lg:top-90 lg:right-180 top-150 right-15">
+        <img src="./images/namad2.svg" width="140px" alt="">
+        <img src="./images/namad1.svg" width="140px" alt="">
+      </div>
+    </footer>
+
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      centeredSlides: true,
+      loop: true,
+      autoplay: {
+        delay: 6500,
+        disableOnInteraction: false,
+      },
+      // pagination: {
+      //   el: ".swiper-pagination",
+      //   clickable: true,
+      // },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script> 
+  <script>
+    var swiper = new Swiper(".mySwiper-2", {
+      slidesPerView: 1,
+      spaceBetween: 20,
+      // pagination: {
+      //   el: ".swiper-pagination",
+      //   clickable: true,
+      // },
+    breakpoints: {
+      768: {
+        slidesPerView: 3,
+        spaceBetween: 30,
+      }
+    }
+  });
+  </script>
+
+  <script src="./node_modules/swiper/swiper-bundle.min.js"></script>
+</body>
+</html>
